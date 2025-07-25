@@ -1,14 +1,23 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { MessageCircle, Github, Mail, Phone, MapPin, ExternalLink, Calendar, Building } from "lucide-react"
-import ChatBot from "./components/chat-bot"
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import {
+  MessageCircle,
+  Github,
+  Mail,
+  Phone,
+  MapPin,
+  ExternalLink,
+  Calendar,
+  Building,
+} from "lucide-react";
+import ChatBot from "./components/chat-bot";
 
 export default function Portfolio() {
-  const [isChatOpen, setIsChatOpen] = useState(false)
+  const [isChatOpen, setIsChatOpen] = useState(false);
 
   const skills = [
     "JavaScript",
@@ -30,14 +39,14 @@ export default function Portfolio() {
     "PHP",
     "PostgreSQL",
     "Bootstrap",
-  ]
+  ];
 
   const languages = [
     { name: "English", level: "Non-native" },
     { name: "Amharic", level: "Fluent" },
     { name: "Somali", level: "Fluent" },
     { name: "Oromo", level: "Fluent" },
-  ]
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
@@ -45,10 +54,16 @@ export default function Portfolio() {
       <header className="bg-white shadow-sm border-b">
         <div className="max-w-6xl mx-auto px-4 py-4">
           <nav className="flex justify-between items-center">
-            <h1 className="text-2xl font-bold text-slate-800">Abdisa Abdurahim</h1>
+            <h1 className="text-2xl font-bold text-slate-800">
+              Abdisa Abdurahim
+            </h1>
             <div className="flex gap-4">
               <Button variant="outline" size="sm" asChild>
-                <a href="https://github.com/4bdisa" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/4bdisa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Github className="w-4 h-4 mr-2" />
                   GitHub
                 </a>
@@ -67,11 +82,17 @@ export default function Portfolio() {
       <main className="max-w-6xl mx-auto px-4 py-8 space-y-12">
         {/* Hero Section */}
         <section className="text-center space-y-6">
-          <div className="w-32 h-32 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto flex items-center justify-center text-white text-4xl font-bold">
-            AA
+          <div className="bg-white shadow-lg rounded-sm p-6 max-w-md mx-auto">
+            <img
+              src="/profile.JPG"
+              alt="AA"
+              className="w-60 h-60 rounded-full mx-auto mb-4 border-4 border-slate-200"
+            />
           </div>
           <div>
-            <h1 className="text-4xl font-bold text-slate-800 mb-2">Abdisa Abdurahim</h1>
+            <h1 className="text-4xl font-bold text-slate-800 mb-2">
+              Abdisa Abdurahim
+            </h1>
             <p className="text-xl text-slate-600 mb-4">Full Stack Developer</p>
             <div className="flex justify-center items-center gap-6 text-slate-600">
               <div className="flex items-center gap-2">
@@ -98,10 +119,12 @@ export default function Portfolio() {
             </CardHeader>
             <CardContent>
               <p className="text-slate-700 leading-relaxed">
-                Computer Science graduate from Haramaya University with hands-on experience in fullstack web development
-                using the MERN stack. Skilled in building scalable, user-focused applications with technologies like
-                React, Node.js, and MongoDB. A fast learner with strong communication and teamwork skills, passionate
-                about continuous improvement in modern web technologies.
+                Computer Science graduate from Haramaya University with hands-on
+                experience in fullstack web development using the MERN stack.
+                Skilled in building scalable, user-focused applications with
+                technologies like React, Node.js, and MongoDB. A fast learner
+                with strong communication and teamwork skills, passionate about
+                continuous improvement in modern web technologies.
               </p>
             </CardContent>
           </Card>
@@ -116,7 +139,9 @@ export default function Portfolio() {
             <CardContent>
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold text-slate-800 mb-2">Technologies & Frameworks</h4>
+                  <h4 className="font-semibold text-slate-800 mb-2">
+                    Technologies & Frameworks
+                  </h4>
                   <div className="flex flex-wrap gap-2">
                     {skills.map((skill) => (
                       <Badge key={skill} variant="secondary">
@@ -126,7 +151,9 @@ export default function Portfolio() {
                   </div>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-slate-800 mb-2">Development Areas</h4>
+                  <h4 className="font-semibold text-slate-800 mb-2">
+                    Development Areas
+                  </h4>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="outline">Fullstack Web Development</Badge>
                     <Badge variant="outline">RESTful APIs</Badge>
@@ -148,7 +175,9 @@ export default function Portfolio() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {languages.map((lang) => (
                   <div key={lang.name} className="text-center">
-                    <div className="font-semibold text-slate-800">{lang.name}</div>
+                    <div className="font-semibold text-slate-800">
+                      {lang.name}
+                    </div>
                     <div className="text-sm text-slate-600">{lang.level}</div>
                   </div>
                 ))}
@@ -167,10 +196,13 @@ export default function Portfolio() {
               <div className="border-l-2 border-blue-500 pl-4">
                 <div className="flex items-start justify-between mb-2">
                   <div>
-                    <h3 className="font-semibold text-slate-800">Full Stack Developer Intern</h3>
+                    <h3 className="font-semibold text-slate-800">
+                      Full Stack Developer Intern
+                    </h3>
                     <p className="text-slate-600 flex items-center gap-2">
                       <Building className="w-4 h-4" />
-                      West Arsi Human Resource Management Bureau – Shashamane, Ethiopia
+                      West Arsi Human Resource Management Bureau – Shashamane,
+                      Ethiopia
                     </p>
                   </div>
                   <div className="flex items-center gap-2 text-slate-500 text-sm">
@@ -180,13 +212,16 @@ export default function Portfolio() {
                 </div>
                 <ul className="list-disc list-inside text-slate-700 space-y-1">
                   <li>
-                    Developed a cloud-based file management system using HTML, CSS, JavaScript (Bootstrap), PHP, and
-                    PostgreSQL
+                    Developed a cloud-based file management system using HTML,
+                    CSS, JavaScript (Bootstrap), PHP, and PostgreSQL
                   </li>
-                  <li>Replaced paper-based processes with a digital solution to reduce data loss and improve access</li>
                   <li>
-                    Contributed to 80% of system development in a waterfall environment, setting the stage for future
-                    deployment
+                    Replaced paper-based processes with a digital solution to
+                    reduce data loss and improve access
+                  </li>
+                  <li>
+                    Contributed to 80% of system development in a waterfall
+                    environment, setting the stage for future deployment
                   </li>
                 </ul>
               </div>
@@ -195,7 +230,8 @@ export default function Portfolio() {
                 <div className="flex items-start justify-between mb-2">
                   <div>
                     <h3 className="font-semibold text-slate-800">
-                      Student Union Executive – Finance & Treasurer / Temporary Vice President
+                      Student Union Executive – Finance & Treasurer / Temporary
+                      Vice President
                     </h3>
                     <p className="text-slate-600 flex items-center gap-2">
                       <Building className="w-4 h-4" />
@@ -209,11 +245,17 @@ export default function Portfolio() {
                 </div>
                 <ul className="list-disc list-inside text-slate-700 space-y-1">
                   <li>
-                    Managed union financial operations and collaborated with university staff to support student
-                    initiatives
+                    Managed union financial operations and collaborated with
+                    university staff to support student initiatives
                   </li>
-                  <li>Led meetings and supported team coordination as temporary VP for five months</li>
-                  <li>Gained strong communication, problem-solving, and leadership skills</li>
+                  <li>
+                    Led meetings and supported team coordination as temporary VP
+                    for five months
+                  </li>
+                  <li>
+                    Gained strong communication, problem-solving, and leadership
+                    skills
+                  </li>
                 </ul>
               </div>
             </CardContent>
@@ -233,10 +275,16 @@ export default function Portfolio() {
                     <h3 className="text-xl font-semibold text-slate-800 mb-2">
                       FixerHub – General Maintenance Platform
                     </h3>
-                    <p className="text-slate-600 mb-2">Fullstack Web Application (MERN Stack)</p>
+                    <p className="text-slate-600 mb-2">
+                      Fullstack Web Application (MERN Stack)
+                    </p>
                   </div>
                   <Button variant="outline" size="sm" asChild>
-                    <a href="https://github.com/4bdisa" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href="https://github.com/4bdisa"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <ExternalLink className="w-4 h-4 mr-2" />
                       View Code
                     </a>
@@ -244,11 +292,17 @@ export default function Portfolio() {
                 </div>
                 <ul className="list-disc list-inside text-slate-700 space-y-1 mb-4">
                   <li>
-                    A platform that connects customers with nearby service providers based on location and average
-                    rating
+                    A platform that connects customers with nearby service
+                    providers based on location and average rating
                   </li>
-                  <li>Allows customers to send service requests, which providers can accept or decline</li>
-                  <li>Features include service provider sorting, user authentication, and service tracking</li>
+                  <li>
+                    Allows customers to send service requests, which providers
+                    can accept or decline
+                  </li>
+                  <li>
+                    Features include service provider sorting, user
+                    authentication, and service tracking
+                  </li>
                 </ul>
                 <div className="flex flex-wrap gap-2">
                   <Badge>React</Badge>
@@ -273,10 +327,15 @@ export default function Portfolio() {
               <div className="border-l-2 border-purple-500 pl-4">
                 <div className="flex items-start justify-between mb-2">
                   <div>
-                    <h3 className="font-semibold text-slate-800">BSc in Computer Science</h3>
-                    <p className="text-slate-600">Haramaya University – Haramaya, Ethiopia</p>
+                    <h3 className="font-semibold text-slate-800">
+                      BSc in Computer Science
+                    </h3>
+                    <p className="text-slate-600">
+                      Haramaya University – Haramaya, Ethiopia
+                    </p>
                     <p className="text-sm text-slate-500">
-                      Specialization: Fullstack Web Development and Software Engineering Fundamentals
+                      Specialization: Fullstack Web Development and Software
+                      Engineering Fundamentals
                     </p>
                   </div>
                   <div className="flex items-center gap-2 text-slate-500 text-sm">
@@ -311,7 +370,9 @@ export default function Portfolio() {
       {/* Footer */}
       <footer className="bg-slate-800 text-white py-8 mt-16">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <p className="mb-4">Let's connect and build something amazing together!</p>
+          <p className="mb-4">
+            Let's connect and build something amazing together!
+          </p>
           <div className="flex justify-center gap-4">
             <Button
               variant="outline"
@@ -319,7 +380,11 @@ export default function Portfolio() {
               asChild
               className="text-white border-white hover:bg-white hover:text-slate-800 bg-transparent"
             >
-              <a href="https://github.com/4bdisa" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/4bdisa"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Github className="w-4 h-4 mr-2" />
                 GitHub
               </a>
@@ -336,9 +401,11 @@ export default function Portfolio() {
               </a>
             </Button>
           </div>
-          <p className="text-slate-400 text-sm mt-4">© 2024 Abdisa Abdurahim. All rights reserved.</p>
+          <p className="text-slate-400 text-sm mt-4">
+            © 2024 Abdisa Abdurahim. All rights reserved.
+          </p>
         </div>
       </footer>
     </div>
-  )
+  );
 }
