@@ -1,8 +1,8 @@
 # Abdisa portfolio website
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+_Automatically synced with your [v0.dev](https://v0.dev) deployments_
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/4bdisas-projects/v0-abdisa-portfolio-website)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/4bdisas-projects/Abdisa-portfolio)
 [![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/zd9M6nGKsfU)
 
 ## Overview
@@ -14,7 +14,7 @@ Any changes you make to your deployed app will be automatically pushed to this r
 
 Your project is live at:
 
-**[https://vercel.com/4bdisas-projects/v0-abdisa-portfolio-website](https://vercel.com/4bdisas-projects/v0-abdisa-portfolio-website)**
+**[https://vercel.com/4bdisas-projects/Abdisa-portfolio](https://vercel.com/4bdisas-projects/Abdisa-portfolio)**
 
 ## Build your app
 
