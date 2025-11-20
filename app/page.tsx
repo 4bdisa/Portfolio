@@ -21,6 +21,8 @@ export default function Portfolio() {
 
   const skills = [
     "JavaScript",
+    "c++",
+    "php",
     "HTML",
     "CSS",
     "React",
@@ -281,12 +283,12 @@ export default function Portfolio() {
                   </div>
                   <Button variant="outline" size="sm" asChild>
                     <a
-                      href="https://github.com/4bdisa"
+                      href="https://fixerhub.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <ExternalLink className="w-4 h-4 mr-2" />
-                      View Code
+                      view the project 
                     </a>
                   </Button>
                 </div>
