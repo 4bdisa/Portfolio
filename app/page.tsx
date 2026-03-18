@@ -71,12 +71,23 @@ export default function Portfolio() {
                   GitHub
                 </a>
               </Button>
+             <Button variant="outline" size="sm" asChild>
+                <a
+                  href="https://www.linkedin.com/in/4bdisa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Linkedin className="w-4 h-4 mr-2" />
+                  LinkedIn
+                </a>
+              </Button>
               <Button variant="outline" size="sm" asChild>
                 <a href="mailto:4bdisa@gmail.com">
                   <Mail className="w-4 h-4 mr-2" />
                   Contact
                 </a>
               </Button>
+              
             </div>
           </nav>
         </div>
