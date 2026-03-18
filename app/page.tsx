@@ -81,13 +81,7 @@ export default function Portfolio() {
                   LinkedIn
                 </a>
               </Button>
-              <Button variant="outline" size="sm" asChild>
-                <a href="mailto:4bdisa@gmail.com">
-                  <Mail className="w-4 h-4 mr-2" />
-                  Contact
-                </a>
-              </Button>
-              
+            
             </div>
           </nav>
         </div>
