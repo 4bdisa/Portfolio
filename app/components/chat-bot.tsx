@@ -1,6 +1,7 @@
 "use client"
 
-import { useChat } from "ai/react"
+// Use the installed `@ai-sdk/react` package's `useChat` hook
+import { useChat } from "@ai-sdk/react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"

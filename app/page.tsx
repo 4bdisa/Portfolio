@@ -8,6 +8,7 @@ import {
   MessageCircle,
   Github,
   Mail,
+  Linkedin,
   Phone,
   MapPin,
   ExternalLink,
@@ -93,9 +94,9 @@ export default function Portfolio() {
           </div>
           <div>
             <h1 className="text-4xl font-bold text-slate-800 mb-2">
-              Abdisa Abdurahim
+              Abdisa Abdurahim 
             </h1>
-            <p className="text-xl text-slate-600 mb-4">Full Stack Developer</p>
+            <p className="text-xl text-slate-600 mb-4">Full Stack Developer | National ID IT Technical Support Advisor atEthio Telecom | Problem Solver & Systems Support Specialist</p>
             <div className="flex justify-center items-center gap-6 text-slate-600">
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
@@ -121,12 +122,7 @@ export default function Portfolio() {
             </CardHeader>
             <CardContent>
               <p className="text-slate-700 leading-relaxed">
-                Computer Science graduate from Haramaya University with hands-on
-                experience in fullstack web development using the MERN stack.
-                Skilled in building scalable, user-focused applications with
-                technologies like React, Node.js, and MongoDB. A fast learner
-                with strong communication and teamwork skills, passionate about
-                continuous improvement in modern web technologies.
+                Dedicated and adaptable Computer Science graduate with a background in both technical support and web development. As a junior full-stack developer, I have practical experience building applications like "FixerHub" using the MERN stack to connect users with local service providers. Currently serving as an IT Technical Support Advisor at Ethio Telecom, I possess strong problem-solving skills and a commitment to writing clean, maintainable code. I am a rapid learner focused on delivering functional, real-world utility through modern web technologies.
               </p>
             </CardContent>
           </Card>
@@ -195,6 +191,35 @@ export default function Portfolio() {
               <CardTitle>Work Experience</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
+              <div className="border-l-2 border-green-500 pl-4">
+                <div className="flex items-start justify-between mb-2">
+                  <div>
+                    <h3 className="font-semibold text-slate-800">
+                      Technical Support Advisor (National ID Project)
+                    </h3>
+                    <p className="text-slate-600 flex items-center gap-2">
+                      <Building className="w-4 h-4" />
+                      Ethio Telecom – Ethiopia
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-2 text-slate-500 text-sm">
+                    <Calendar className="w-4 h-4" />
+                   March 2026 – Present
+                  </div>
+                </div>
+                <ul className="list-disc list-inside text-slate-700 space-y-1">
+                  <li>
+                   Technical Operations Lead: Provide high-level technical oversight for the National ID registration system, ensuring 99.9% uptime for critical biometric enrollment software.
+                  </li>
+                  <li>
+                   Performance Optimization: The ability to identify "bottlenecks" in a software workflow and refactor the process to make it faster.
+                  </li>
+                  <li>
+                    Gained strong communication, problem-solving, Technical Mentorship, Cross-functional Collaboration, Operational Leadership.
+                  </li>
+                </ul>
+              </div>
+
               <div className="border-l-2 border-blue-500 pl-4">
                 <div className="flex items-start justify-between mb-2">
                   <div>
@@ -260,6 +285,7 @@ export default function Portfolio() {
                   </li>
                 </ul>
               </div>
+            
             </CardContent>
           </Card>
         </section>
@@ -400,6 +426,17 @@ export default function Portfolio() {
               <a href="mailto:4bdisa@gmail.com">
                 <Mail className="w-4 h-4 mr-2" />
                 Email
+              </a>
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              asChild
+              className="text-white border-white hover:bg-white hover:text-slate-800 bg-transparent"
+            >
+              <a href="https://www.linkedin.com/in/4bdisa" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="w-4 h-4 mr-2" />
+                LinkedIn
               </a>
             </Button>
           </div>
